@@ -1,0 +1,48 @@
+body{
+  background-color: #ffffff;
+  color:rgb(13, 10, 10) ;
+  font-family: sans-serif;
+}
+img{
+  height: 90px;
+  width: 90px;
+  margin-top: 5px;
+}
+button{
+  all: unset;
+  padding: 6px 20px;
+  background: var(--red);
+  height: 32px;
+  font-weight: 500;
+  color: rgb(255, 249, 249);
+  border-radius: 10px;
+  margin-top: 5px;
+
+  
+}
+.container{
+  margin: o auto;
+  max-width: 1280px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+ height: 72px;
+ align-items: center;
+}
+.hero{
+  display: flex;
+}
+nav ul{
+  display: flex;
+  gap: 24px;
+}
+
+:root{
+   --red: #d01c28;
+   --gray:2e2e2e;
+
+}
+*{
+  margin: 0;
+}
