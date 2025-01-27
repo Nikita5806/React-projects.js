@@ -38,3 +38,18 @@ resetAllPastes:(states, action ) =>{
 export const {addToPastes ,UpdateToPastes , resetAllPastes, removeFromPaste } = counterSlice.actions
 
 export default pasteSlice.reducer
+
+import React from 'react'
+import './App.css';
+
+
+
+const App = () => {
+  return (
+    <div>
+      lets codee
+    </div>
+  )
+}
+
+export default App
