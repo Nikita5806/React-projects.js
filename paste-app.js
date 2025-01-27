@@ -6,7 +6,7 @@ export default configureStore({
     paste : pasteReducer,
   },
 })
-
+!*pasteSlice*!
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState ={
