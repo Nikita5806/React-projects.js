@@ -50,3 +50,13 @@ const App = ()=> {
   }
 
 export default App
+
+import React from 'react'
+
+const AppLayout = () => {
+  return (
+<h1>huhunjnsn</h1>
+  )
+}
+
+export default AppLayout
