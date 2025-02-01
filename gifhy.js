@@ -182,3 +182,18 @@ const App = ()=> {
   }
 
 export default App;
+
+import { Outlet } from "react-router-dom";
+
+const AppLayout = () => {
+  return (
+    <div>
+      <main>
+        <Outlet /> {/* This is required for nested routes */}
+      </main>
+    </div>
+  );
+};
+
+export default AppLayout;
+
