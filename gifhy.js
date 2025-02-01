@@ -136,3 +136,49 @@ export default {
   plugins: [],
 }
 
+
+import { createBrowserRouter } from "react-router-dom";
+import Home from "./components/Home";
+import Fav from "./components/Fav";
+import Search from "./components/Search";
+import Singlegif from "./components/Singlegif";
+import Category from "./components/Category";
+const router = createBrowserRouter([
+  {
+    element: <AppLayout />,
+  children:  [
+      {
+        path:"/",
+        element:<Home />,
+        
+      },
+      {
+        
+        path: "category",
+  element:<Category />,
+        
+      },
+      {
+          path:"/search/:query",
+        element:<Search />,
+        
+      },
+      {
+        path:"/type/:slung",
+
+        element:<Singlegif />,
+      } ,
+       {
+      path:"/favorites",
+      element:<Fav />,
+       },
+    ],
+  },
+]);
+
+const App = ()=> {
+  return 
+  <RouterProvider router={router}/>;
+  }
+
+export default App;
