@@ -19,3 +19,14 @@ let newme = products.filter(function(products){
     return products.category === "Electronics";
 })
   console.log(newme)
+
+const users = [
+    { id: 1, name: "Alice", age: 25, email: "alice@example.com", role: "Admin" },
+    { id: 2, name: "Bob", age: 30, email: "bob@example.com", role: "User" },
+    { id: 3, name: "Charlie", age: 22, email: "charlie@example.com", role: "Moderator" },
+    { id: 4, name: "David", age: 28, email: "david@example.com", role: "User" },
+    { id: 5, name: "Eve", age: 26, email: "eve@example.com", role: "Admin" }
+  ];
+  let yu= users.map(function(users){
+    return `<div> <h3>${users.name}<h3> <h5> ${users.email}</div>`;
+  })  ;
