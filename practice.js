@@ -13,3 +13,6 @@ function abcd (a=12, b=4, c=65){
     console.log(a,b,c)
 }
 abcd(55,65);
+
+var obj ={name: "ullu" , age:88 }
+var{name}= obj;
