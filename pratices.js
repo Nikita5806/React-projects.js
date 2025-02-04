@@ -34,3 +34,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+import React, { useState } from 'react';
+import './App.css';
+import { AddJobForm, JobList } from './components';
+
+function App() {
+  const [jobs, setJobs] = useState([]);
+
+  const addJob = (newJob) => {
+    setJobs((prevJobs) => [...prevJobs, newJob]);
+  };
+
+  return (
+    <div className="App">
+      <header className="bg-blue-500 text-white p-4 text-center text-2xl">
+        Job Application Tracker
+      </header>
+      <main className="p-4">
+        <AddJobForm onAddJob={addJob} />
+        <JobList jobs={jobs} />
+      </main>
+    </div>
+  );
+}
+
+export default App;
+
