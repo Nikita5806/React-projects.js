@@ -61,3 +61,64 @@ function App() {
 
 export default App;
 
+import React, { useState } from 'react';
+
+const AddJobForm = ({ onAddJob }) => {
+  const [job, setJob] = useState({
+    company: '',
+    role: '',
+    status: 'Applied',  // Default status
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setJob({ ...job, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onAddJob(job);
+    setJob({ company: '', role: '', status: 'Applied' });
+  };
+
+  return (
+    <form className="mb-4" onSubmit={handleSubmit}>
+      <input
+        type="text"
+        name="company"
+        value={job.company}
+        onChange={handleChange}
+        placeholder="Company Name"
+        className="p-2 border mb-2 w-full"
+        required
+      />
+      <input
+        type="text"
+        name="role"
+        value={job.role}
+        onChange={handleChange}
+        placeholder="Job Role"
+        className="p-2 border mb-2 w-full"
+        required
+      />
+      <select
+        name="status"
+        value={job.status}
+        onChange={handleChange}
+        className="p-2 border mb-2 w-full"
+      >
+        <option value="Applied">Applied</option>
+        <option value="Interviewing">Interviewing</option>
+        <option value="Rejected">Rejected</option>
+        <option value="Offer">Offer</option>
+      </select>
+      <button type="submit" className="p-2 bg-blue-500 text-white w-full">
+        Add Job
+      </button>
+    </form>
+  );
+};
+
+export default AddJobForm;
+
+
