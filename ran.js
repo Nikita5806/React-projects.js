@@ -10,3 +10,26 @@ Initializing while declaring
     console.log(house)
     console.log(house1)
     console.log(home)
+// String written inside quotes
+    var x = "Welcome to GeeksforGeeks!";
+    console.log(x);
+    
+      // Declare an object
+    var y = new String("Great Geek");
+   console.log(y);
+   
+   
+    let a = "abcdefgh";
+
+    // Finding the first index of the character 'b'
+    console.log(a.indexOf('b'));
+    //1
+
+
+    let a2 = "Hello World";
+
+    let arrString = ["Geeks", "for", "Geeks"]
+
+    // Replacing the word 'World' with 'Geeks'
+    console.log(a2.replace("World", arrString[0]));
+    //hello geeks
