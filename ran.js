@@ -39,3 +39,8 @@ function fun() {
     return a * b;  // Correct way to return the value
 }
 console.log(fun()); // Output: 108
+
+for (let i = 1; i <= 5; i++) {
+    console.log(`${i} - ${i * i}`);
+}
+
