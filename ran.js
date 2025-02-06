@@ -50,5 +50,15 @@ let kelvin = temperature + 273; // Convert to Kelvin
 // Print the output in the exact required format
 console.log("Celsius - " + temperature);
 console.log("Kelvin - " + kelvin);
-
+// your code goes here
+let hour = 5;
+function min(){
+    return hour* 60;
+    
+}
+function sec(){
+    return hour*60*60;
+}
+console.log(min());
+console.log(sec());
 
