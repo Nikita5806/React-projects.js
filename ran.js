@@ -44,3 +44,11 @@ for (let i = 1; i <= 5; i++) {
     console.log(`${i} - ${i * i}`);
 }
 
+let temperature = 25.5; // Declare and initialize temperature in Celsius
+let kelvin = temperature + 273; // Convert to Kelvin
+
+// Print the output in the exact required format
+console.log("Celsius - " + temperature);
+console.log("Kelvin - " + kelvin);
+
+
