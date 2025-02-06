@@ -33,3 +33,9 @@ Initializing while declaring
     // Replacing the word 'World' with 'Geeks'
     console.log(a2.replace("World", arrString[0]));
     //hello geeks
+let a = 9;
+let b = 12;
+function fun() {
+    return a * b;  // Correct way to return the value
+}
+console.log(fun()); // Output: 108
